@@ -1,5 +1,6 @@
 package com.markwal.mcmod.letsmodreboot.item;
 
+import com.markwal.mcmod.letsmodreboot.creativetab.CreativeTabLMRB;
 import com.markwal.mcmod.letsmodreboot.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -14,6 +15,7 @@ public class ItemLMRB extends Item {
 
     public ItemLMRB() {
         super();
+        this.setCreativeTab(CreativeTabLMRB.LMBR_TAB);
     }
 
     @Override

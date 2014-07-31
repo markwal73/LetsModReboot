@@ -1,5 +1,6 @@
 package com.markwal.mcmod.letsmodreboot.block;
 
+import com.markwal.mcmod.letsmodreboot.creativetab.CreativeTabLMRB;
 import com.markwal.mcmod.letsmodreboot.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -17,7 +18,9 @@ public class BlockLMRB extends Block {
     }
 
     public BlockLMRB() {
+
         this(Material.rock);
+        this.setCreativeTab(CreativeTabLMRB.LMBR_TAB);
     }
 
     @Override
