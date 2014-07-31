@@ -1,6 +1,7 @@
 package com.markwal.mcmod.letsmodreboot;
 
 import com.markwal.mcmod.letsmodreboot.handler.ConfigurationHandler;
+import com.markwal.mcmod.letsmodreboot.init.ModBlocks;
 import com.markwal.mcmod.letsmodreboot.init.ModItems;
 import com.markwal.mcmod.letsmodreboot.proxy.IProxy;
 import com.markwal.mcmod.letsmodreboot.reference.Reference;
@@ -29,6 +30,7 @@ public class LetsModReboot {
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+        ModBlocks.init();
 
         LogHelper.info("Pre Initialization Complete!");
     }
